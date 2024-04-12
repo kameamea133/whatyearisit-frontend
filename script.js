@@ -1,5 +1,6 @@
 fetch('https://whatyearisit-backend-bice-omega.vercel.app/year')
  .then(response => response.json())
  .then((data)=> {
-  document.querySelector('#year').textContent = `this is the year: ${data.getFullYear().toString()}`
+  console.log(data)
+  // document.querySelector('#year').textContent = `this is the year: ${data.getFullYear().toString()}`
  })
